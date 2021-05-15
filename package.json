@@ -1,0 +1,18 @@
+{
+  "name": "@swsl/swsl-component-lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "concurrently \"wsrun --parallel start\" ",
+    "build": "concurrently \"wsrun --parallel build\" "
+  },
+  "devDependencies": {
+    "concurrently": "^6.1.0",
+    "wsrun": "^5.2.4"
+  }
+}
