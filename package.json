@@ -9,10 +9,13 @@
   ],
   "scripts": {
     "start": "concurrently \"wsrun --parallel start\" ",
-    "build": "concurrently \"wsrun --parallel build\" "
+    "build": "concurrently \"wsrun --parallel build\" ",
+    "deploy:local": "concurrently \"wsrun --parallel deploy:local\" "
   },
   "devDependencies": {
     "concurrently": "^6.1.0",
+    "http-server": "^0.12.3",
+    "lerna": "^4.0.0",
     "wsrun": "^5.2.4"
   }
 }

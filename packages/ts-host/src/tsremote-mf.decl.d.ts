@@ -1,2 +1,2 @@
-declare  module  "tsremote-mf/ToDos"
-declare  module  "tsremote-mf/ToDoListView"
+declare  module  "@swsl/ts-remote-mf/ToDos"
+declare  module  "@swsl/ts-remote-mf/ToDoListView"

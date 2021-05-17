@@ -5,7 +5,8 @@
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "start": "webpack serve --mode development",
-    "start:live": "webpack serve --mode development --liveReload"
+    "start:live": "webpack serve --mode development --liveReload",
+    "deploy:local": "http-server -p 5002 dist"
   },
   "license": "MIT",
   "author": {
@@ -31,8 +32,10 @@
   },
   "dependencies": {
     "@swsl/shared-types": "1.0.0",
-    "@swsl/ts-remote": "1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "peerDependencies": {
+    "@swsl/ts-remote": "1.0.0"
   }
 }

@@ -2,7 +2,9 @@
   "name": "@swsl/shared-types",
   "version": "1.0.0",
   "scripts": {
-    "start": "echo started"
+    "start": "echo started",
+    "build": "echo build",
+    "deploy:local": "echo deployed locally"
   },
   "main": "./src/types.ts",
   "license": "MIT",

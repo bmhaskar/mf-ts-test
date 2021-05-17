@@ -2,8 +2,9 @@ import React, { useRef, useState} from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import  "./tsremote-mf.decl.d";
-import ToDos  from "tsremote-mf/ToDos";
-import ToDoListView  from "tsremote-mf/ToDoListView";
+import ToDos  from "@swsl/ts-remote-mf/ToDos";
+import ToDoListView  from "@swsl/ts-remote-mf/ToDoListView";
+
 import {ToDo, ToDoListComponent} from "@swsl/shared-types";
 
 const ToDoListViewComp = ToDoListView as ToDoListComponent;
