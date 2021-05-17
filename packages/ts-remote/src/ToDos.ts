@@ -10,7 +10,7 @@ import {List, ListFilter, ToDo} from "@swsl/shared-types";
     getAll(): ToDo[] {
         return ToDos.instance.todos;
     }
-    select(filter:ListFilter ): ToDo[] {
+    select(filter:ListFilter<ToDo> ): ToDo[] {
         return ToDos.instance.todos.filter(filter);
     }
 }
