@@ -9,10 +9,6 @@
     "deploy:local": "http-server -p 5000 dist"
   },
   "license": "MIT",
-  "author": {
-    "name": "Jack Herrington",
-    "email": "jherr@pobox.com"
-  },
   "devDependencies": {
     "@babel/core": "7.9.6",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
