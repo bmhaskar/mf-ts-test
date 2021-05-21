@@ -1,9 +1,8 @@
-import React, {useRef, useState} from "react";
-import ReactDOM from "react-dom";
+import React, {FC, useRef, useState} from "react";
 import "./index.css";
 import ToDos from "./ToDos";
 import ToDoListView from "./ToDoListView";
-const App = () => {
+const App: FC = () => {
     const inputRef = useRef<HTMLInputElement>(null)
     const [todos , setToDo] = useState(ToDos.getAll());
     return (
@@ -16,6 +15,6 @@ const App = () => {
             }}>Add</button>
         </div>);
 }
+export default App;
 
 
-ReactDOM.render(<App />, document.getElementById("app"));

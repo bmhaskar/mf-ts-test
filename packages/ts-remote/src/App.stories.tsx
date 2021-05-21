@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import App from "./App";
 
 export default {
-    title: 'Swsl/Host-App',
+    title: 'Swsl/Remote-App',
     component: App
 } as Meta;
 
