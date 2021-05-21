@@ -21,5 +21,5 @@ const App = () => {
         }}>Add</button>
     </div>);
 }
-
+export default App;
 ReactDOM.render(<App />, document.getElementById("app"));

@@ -1,12 +1,13 @@
 {
   "name": "@swsl/ts-host",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "start": "webpack serve --mode development",
     "start:live": "webpack serve --mode development --liveReload",
-    "deploy:local": "http-server -p 5002 dist"
+    "deploy:local": "http-server -p 5002 dist",
+    "build:library": "webpack --mode production  --config ./webpack.storybook.config.js"
   },
   "license": "MIT",
   "devDependencies": {
@@ -20,7 +21,7 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "css-loader": "^3.5.3",
-    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-plugin": "^5.3.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.10.1",
     "webpack-cli": "4.7.0",
