@@ -16,7 +16,7 @@ module.exports = {
   webpackFinal: async (config, { configType }) => {
     let remotes  = {};
     remotes = {
-      "@swsl/ts-remote-mf"  :"swsltsremote@http://localhost:3001/ts-remote/remoteEntry.js"
+      "@swsl/ts-remote-mf"  :"swsltsremote@"
     }
 
     config.plugins.push(
@@ -25,7 +25,19 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes,
       exposes: {},
-      shared: {}
+      shared: {
+        ...manifest.dependencies,
+        react: {
+          singleton: true,
+          eager: false,
+          requiredVersion: manifest.dependencies.react,
+        },
+        "react-dom": {
+          singleton: true,
+          eager: false,
+          requiredVersion: manifest.dependencies["react-dom"],
+        }
+      }
     })
     )
 
