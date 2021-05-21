@@ -21,13 +21,14 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "css-loader": "^3.5.3",
-    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-plugin": "^5.3.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.10.1",
     "webpack-cli": "4.7.0",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@swsl/ts-host": "1.0.0",
     "@swsl/shared-types": "1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

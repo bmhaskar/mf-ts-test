@@ -50,10 +50,12 @@ module.exports = (env, argv)  => {
           ...manifest.dependencies,
           react: {
             singleton: true,
+            eager: true,
             requiredVersion: manifest.dependencies.react,
           },
           "react-dom": {
             singleton: true,
+            eager: true,
             requiredVersion: manifest.dependencies["react-dom"],
           }
 

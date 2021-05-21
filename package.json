@@ -10,12 +10,38 @@
   "scripts": {
     "start": "concurrently \"wsrun --parallel start\" ",
     "build": "concurrently \"wsrun --parallel build\" ",
-    "deploy:local": "concurrently \"wsrun --parallel deploy:local\" "
+    "deploy:local": "concurrently \"wsrun --parallel deploy:local\" ",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@storybook/addon-actions": "^6.3.0-alpha.33",
+    "@storybook/addon-essentials": "^6.3.0-alpha.33",
+    "@storybook/addon-links": "^6.3.0-alpha.33",
+    "@storybook/builder-webpack5": "^6.3.0-alpha.33",
+    "@storybook/react": "^6.3.0-alpha.33",
+    "assert-browserify": "^2.0.0",
+    "babel-loader": "^8.2.2",
     "concurrently": "^6.1.0",
+    "core-js": "^3.12.1",
     "http-server": "^0.12.3",
     "lerna": "^4.0.0",
+    "node-polyfill-webpack-plugin": "^1.1.2",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "stream-browserify": "^3.0.0",
+    "webpack": "^5.37.0",
     "wsrun": "^5.2.4"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.2.4"
   }
 }
