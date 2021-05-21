@@ -1,5 +1,4 @@
 import React, { useRef, useState} from "react";
-import ReactDOM from "react-dom";
 import "./index.css";
 import  "./tsremote-mf.decl.d";
 import ToDos  from "@swsl/ts-remote-mf/ToDos";
@@ -22,4 +21,4 @@ const App = () => {
     </div>);
 }
 export default App;
-ReactDOM.render(<App />, document.getElementById("app"));
+
