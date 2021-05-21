@@ -27,16 +27,15 @@ module.exports = {
       exposes: {},
       shared: {
         ...manifest.dependencies,
-        react: {
-          singleton: true,
-          eager: false,
-          requiredVersion: manifest.dependencies.react,
-        },
-        "react-dom": {
-          singleton: true,
-          eager: false,
-          requiredVersion: manifest.dependencies["react-dom"],
-        }
+        // react: {
+        //   eager: false,
+        //   requiredVersion: manifest.dependencies.react,
+        // },
+        // "react-dom": {
+        //   singleton: true,
+        //   eager: false,
+        //   requiredVersion: manifest.dependencies["react-dom"],
+        // }
       }
     })
     )
