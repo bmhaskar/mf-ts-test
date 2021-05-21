@@ -6,8 +6,7 @@
     "build:dev": "webpack --mode development",
     "start": "webpack serve --mode development",
     "start:live": "webpack serve --mode development --liveReload",
-    "deploy:local": "http-server -p 5002 dist",
-    "build:library": "webpack --mode production  --config ./webpack.storybook.config.js"
+    "deploy:local": "http-server -p 5002 dist"
   },
   "license": "MIT",
   "devDependencies": {

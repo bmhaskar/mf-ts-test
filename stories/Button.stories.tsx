@@ -2,9 +2,6 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
 import { Button, ButtonProps } from './Button';
-const App1 = React.lazy(() => import("../packages/ts-host/src/App1"));
-
-
 
 export default {
   title: 'Example/Button',
@@ -15,15 +12,7 @@ export default {
 } as Meta;
 
 
-const Template: Story<ButtonProps> = (args) =>
-  <>
-    <Button {...args} />
-    <React.Suspense fallback="loading">
-
-      <App1 />
-    </React.Suspense>
-  </>
- ;
+const Template: Story<ButtonProps> = (args) => <Button {...args} /> ;
 
 export const Primary = Template.bind({});
 Primary.args = {

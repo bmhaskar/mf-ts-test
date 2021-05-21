@@ -16,7 +16,7 @@ module.exports = {
   webpackFinal: async (config, { configType }) => {
     let remotes  = {};
     remotes = {
-      "@swsl/ts-remote-mf"  :"swsltsremote@"
+      "@swsl/ts-remote-mf"  :"swsltsremote@http://localhost:3001/ts-remote/remoteEntry.js"
     }
 
     config.plugins.push(
